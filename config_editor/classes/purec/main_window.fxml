@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="" fx:id="anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="294.0" xmlns:fx="http://javafx.com/fxml" fx:controller="purec.MainWindowController">
+  <children>
+    <Pane fx:id="main_pane" layoutX="-1.0" prefHeight="286.0" prefWidth="294.0" style="-fx-background-color: #E3E3E3;">
+      <children>
+        <Button fx:id="cancel_button" cancelButton="true" layoutX="220.0" layoutY="247.0" mnemonicParsing="false" onAction="#cancelButtonClick" prefHeight="25.0" prefWidth="60.0" text="Cancel" />
+        <Button fx:id="save_button" layoutX="153.0" layoutY="247.0" mnemonicParsing="false" onAction="#saveButtonClick" prefHeight="25.0" prefWidth="60.0" text="Save" />
+        <Button fx:id="default_button" layoutX="86.0" layoutY="247.0" mnemonicParsing="false" onAction="#defaultButtonClick" prefHeight="25.0" prefWidth="60.0" text="Default" />
+        <Button fx:id="new_button" layoutX="16.0" layoutY="247.0" mnemonicParsing="false" onAction="#newButtonClick" prefHeight="25.0" prefWidth="60.0" text="New" />
+        <Button fx:id="delete_button" layoutX="218.0" layoutY="28.0" mnemonicParsing="false" onAction="#deleteButtonClick" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+        <ComboBox fx:id="user_combobox" editable="true" focusTraversable="false" layoutX="13.0" layoutY="28.0" onAction="#userComboBoxSelect" prefHeight="25.0" prefWidth="197.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Slider fx:id="music_slider" layoutX="16.0" layoutY="219.0" prefWidth="193.99990000000253" />
+        <Label fx:id="music_label" layoutX="15.0" layoutY="200.0" text="Music volume" />
+        <ComboBox fx:id="resolution_combobox" layoutX="13.0" layoutY="82.0" onAction="#resolutionComboBoxSelect" prefHeight="25.0" prefWidth="152.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Label fx:id="user_label" layoutX="16.0" layoutY="6.0" text="User" />
+        <Label layoutX="14.0" layoutY="59.0" text="Resolution" />
+        <CheckBox fx:id="music_checkbox" layoutX="218.0" layoutY="219.0" mnemonicParsing="false" onAction="#musicCheckBoxSelect" text="On" />
+        <Slider fx:id="sound_slider" layoutX="16.0" layoutY="180.0" prefWidth="193.9998779296875" />
+        <Label fx:id="sound_label" layoutX="15.0" layoutY="164.0" text="Sound volume" />
+        <CheckBox fx:id="sound_checkbox" layoutX="218.0" layoutY="180.0" mnemonicParsing="false" onAction="#soundCheckBoxSelect" text="On" />
+        <CheckBox fx:id="fullscreen_checkbox" layoutX="183.0" layoutY="82.0" mnemonicParsing="false" onAction="#fullscreenCheckBoxSelect" text="Fullscreen" />
+        <CheckBox fx:id="vsync_checkbox" layoutX="183.0" layoutY="107.0" mnemonicParsing="false" onAction="#vsyncCheckBoxSelect" text="Vsync" />
+        <TextField fx:id="sizex_field" layoutX="13.0" layoutY="140.0" prefWidth="50.0" />
+        <TextField fx:id="sizey_field" layoutX="82.0" layoutY="140.0" prefWidth="50.0" />
+        <Label fx:id="size_label" layoutX="15.0" layoutY="115.0" text="Window size" />
+        <Label layoutX="70.0" layoutY="140.0" text="x" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

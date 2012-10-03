@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <hash n="component-versions">
+      <value n="oracle.ide.model.Project" v="11.1.2.0.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.ideimpl.model.TechnologyScopeUpdateMigrator" v="11.1.2.0.0.4"/>
+      <value n="oracle.jdeveloper.library.ProjectLibraryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.model.OutputDirectoryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.DeploymentProfilesMigrator" v="11.1.1.1.0"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+   </list>
+   <value n="defaultPackage" v=""/>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="url-path"/>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.TechnologyScopeConfiguration">
+      <list n="technologyScope">
+         <string v="Java"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.ant.AntRunConfiguration">
+      <value n="userJars" v="false"/>
+   </hash>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <value n="internalEncoding" v="Cp1251"/>
+      <list n="Javac.commandline.optionlist">
+         <string v="-g:none"/>
+         <string v="-Xlint:all"/>
+         <string v="-Xlint:-cast"/>
+         <string v="-Xlint:-empty"/>
+         <string v="-Xlint:-fallthrough"/>
+         <string v="-Xlint:-path"/>
+         <string v="-Xlint:-processing"/>
+         <string v="-Xlint:-serial"/>
+         <string v="-Xlint:-unchecked"/>
+      </list>
+      <value n="Javac.-g" v="false"/>
+      <value n="Javac.-g:none" v="true"/>
+      <value n="target" v="1.7"/>
+      <value n="webIANAEncoding" v="windows-1251"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.J2eeSettings">
+      <hash n="webContentSet">
+         <list n="url-path">
+            <url path="public_html/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="name" v="Default"/>
+            <url n="runDirectoryURL" path="."/>
+            <url n="targetURL" path="classes/purec/Main.class"/>
+         </hash>
+      </hash>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <value n="id" v="Lib"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plugin.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Deploy.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javaws.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jfxrt.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../AppData/Roaming/JDeveloper/system11.1.2.3.39.62.76.1/o.jdeveloper/SQLite-JDBC.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../AppData/Roaming/JDeveloper/system11.1.2.3.39.62.76.1/o.jdeveloper/Hibernate.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../Program Files/Java/jre7/lib/"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Lib"/>
+               <value n="id" v="Lib"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../Program Files/Java/jre7/lib/plugin.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Plugin.jar"/>
+               <value n="id" v="Plugin.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../Program Files/Java/jre7/lib/deploy.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Deploy.jar"/>
+               <value n="id" v="Deploy.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../Program Files/Java/jre7/lib/javaws.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Javaws.jar"/>
+               <value n="id" v="Javaws.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../Program Files/Java/jre7/lib/jfxrt.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jfxrt.jar"/>
+               <value n="id" v="Jfxrt.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+         </list>
+      </hash>
+      <hash n="jdkReference">
+         <url n="id" path="../../../AppData/Roaming/JDeveloper/system11.1.2.3.39.62.76.1/o.jdeveloper/1.7.0_07_fx.jdk"/>
+         <value n="isJDK" v="true"/>
+         <value n="jdkVersion" v="1.7.0_07"/>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="Lib"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Plugin.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Deploy.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javaws.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jfxrt.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../AppData/Roaming/JDeveloper/system11.1.2.3.39.62.76.1/o.jdeveloper/SQLite-JDBC.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../AppData/Roaming/JDeveloper/system11.1.2.3.39.62.76.1/o.jdeveloper/Hibernate.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="classes/"/>
+   </hash>
+</jpr:project>

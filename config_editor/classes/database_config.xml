@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package = "purec">
+    <class name = "Profile" table = "options">
+        <id name = "id">
+            <generator class = "native"/>
+        </id>
+        <property name = "resx"/>
+        <property name = "resy"/>
+        <property name = "user"/>
+        <property name = "sizex"/>
+        <property name = "sizey"/>
+        <property name = "soundVolume"/>
+        <property name = "musicVolume"/>
+        <property name = "sound"/>
+        <property name = "music"/>
+        <property name = "fullscreen"/>
+        <property name = "vsync"/>
+    </class>
+</hibernate-mapping>
